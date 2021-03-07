@@ -21,7 +21,6 @@ public class WorkerController {
 
     @PostMapping("/run")
     public Map<String, Object> run(@RequestBody Handler handler) {
-        // TODO 根据入参序列化出handler
         Map<String, Object> result = new HashMap<>();
         try {
             System.out.println("***任务进入worker***");
