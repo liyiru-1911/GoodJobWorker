@@ -24,7 +24,7 @@ public class WorkerController {
         // TODO 根据入参序列化出handler
         Map<String, Object> result = new HashMap<>();
         try {
-            System.out.println("***任务进入***");
+            System.out.println("***任务进入worker***");
             workerService.findHandlerAndRunThenSendResultBack(handler);
             result.put("success", true);
             result.put("msg", "执行器状态健康，分发成功");
